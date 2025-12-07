@@ -1,0 +1,59 @@
+# =====================================================
+# ===| Robots & Content Signals — Open Equity v1.0 |===
+# =====================================================
+#
+# As a condition of accessing this website, you agree to comply with the
+# following equity-permission signals, where applicable:
+#
+# (i) If equity-perm:[use-case] = yes, you may collect or use content for that purpose.
+# (ii) If equity-perm:[use-case] = no, you may not collect or use content for that purpose.
+# (iii) If no signal is provided, no permission is granted or implied.
+#
+# =====================================================
+# ===========| Use-cases and their meaning |===========
+# =====================================================
+#
+# nc_ai_train   = Non-commercial training or fine-tuning of AI models.
+# c_ai_train    = Commercial training or fine-tuning of AI models.
+# heroic_ai_use = AI use for recognised humanitarian or disaster-relief purposes.
+# election      = Use in political campaigns, electioneering, or political advertising.
+# restricted    = Access or use from territorially restricted jurisdictions.
+#                 If restricted = yes, the system MUST:
+#                   (i) retrieve /equity_res.json
+#                   (ii) determine the end-user's country or region
+#                   (iii) refuse to provide content or derived output to
+#                         any end user located in a listed restricted jurisdiction.
+# user_query    = Real-time AI input use (e.g., RAG or grounding).
+# search        = Indexing for conventional search (no AI summaries).
+# ai_search     = AI-generated search summaries, answers, or synthesis.
+#
+# =====================================================
+# ============| Equity Permission Signals |============
+# =====================================================
+#
+# equity-perm:nc_ai_train   = yes
+# equity-perm:c_ai_train    = no
+# equity-perm:heroic_ai_use = yes
+# equity-perm:election      = no
+# equity-perm:restricted    = yes
+# equity-perm:user_query    = yes
+# equity-perm:search        = yes
+# equity-perm:ai_search     = yes
+
+# =====================================================
+# =======| Paths Where These Signals Apply |===========
+# =====================================================
+#
+# Applies to:
+# /path/to
+# /path/to
+# /path/to
+#
+# =====================================================
+# ============| General robots.txt |===================
+# =====================================================
+
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml
